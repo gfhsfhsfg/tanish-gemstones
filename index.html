@@ -1238,26 +1238,26 @@ function slugify(name){
 const DEFAULT_GEMSTONES = [
   // {name:"Columbian Emerald", cat:"gemstone", a:"#3E8F6B", b:"#1E4A3A", light:"#A9E3C6", desc:"A deep, velvety green prized for its clarity and colour saturation."},
   // {name:"Zambian Emerald", cat:"gemstone", a:"#2E7A55", b:"#173C2C", light:"#8FD4B8", desc:"A rich bluish-green emerald with striking labgrown depth."},
-  {name:"Blue Sapphire", cat:"gemstone", a:"#3F63B0", b:"#1C3F7A", light:"#9CB6E8", desc:"A classic cornflower-blue sapphire with elegant lustre."},
-  {name:"Yellow Sapphire", cat:"gemstone", a:"#E6BE4A", b:"#B98A1A", light:"#F6DE93", desc:"A warm, sunlit yellow sapphire with a bright, radiant tone."},
-  {name:"Ruby", cat:"gemstone", a:"#C23A54", b:"#8A1B31", light:"#E98CA0", desc:"A vivid, passionate red stone with timeless appeal."},
-  {name:"Padparadscha Sapphire", cat:"gemstone", a:"#E8896A", b:"#B85A3E", light:"#F5C3AE", desc:"A rare pinkish-orange sapphire named after the lotus blossom."},
+  // {name:"Blue Sapphire", cat:"gemstone", a:"#3F63B0", b:"#1C3F7A", light:"#9CB6E8", desc:"A classic cornflower-blue sapphire with elegant lustre."},
+  // {name:"Yellow Sapphire", cat:"gemstone", a:"#E6BE4A", b:"#B98A1A", light:"#F6DE93", desc:"A warm, sunlit yellow sapphire with a bright, radiant tone."},
+  // {name:"Ruby", cat:"gemstone", a:"#C23A54", b:"#8A1B31", light:"#E98CA0", desc:"A vivid, passionate red stone with timeless appeal."},
+  // {name:"Padparadscha Sapphire", cat:"gemstone", a:"#E8896A", b:"#B85A3E", light:"#F5C3AE", desc:"A rare pinkish-orange sapphire named after the lotus blossom."},
   // {name:"Paraiba", cat:"gemstone", a:"#2FC2BA", b:"#137A75", light:"#9DEAE4", desc:"An electric blue-green stone with an unmistakable glow."},
-  {name:"Pink Sapphire", cat:"gemstone", a:"#DB80A2", b:"#B04E76", light:"#F2BCD1", desc:"A soft, romantic pink sapphire with delicate brilliance."},
-  {name:"Mint Green Sapphire", cat:"gemstone", a:"#8FD4B8", b:"#4E9E7C", light:"#D4F0E3", desc:"A gentle, cooling mint tone that suits everyday elegance."},
-  {name:"White Sapphire", cat:"gemstone", a:"#EDEAE0", b:"#C9C2AA", light:"#FBFAF6", desc:"A clean, colourless sapphire with quiet, versatile sparkle."},
-  {name:"Orange Sapphire", cat:"gemstone", a:"#E08A3E", b:"#B0621F", light:"#F3C08C", desc:"A bold, citrus-toned sapphire full of warmth and character."}
+  // {name:"Pink Sapphire", cat:"gemstone", a:"#DB80A2", b:"#B04E76", light:"#F2BCD1", desc:"A soft, romantic pink sapphire with delicate brilliance."},
+  // {name:"Mint Green Sapphire", cat:"gemstone", a:"#8FD4B8", b:"#4E9E7C", light:"#D4F0E3", desc:"A gentle, cooling mint tone that suits everyday elegance."},
+  // {name:"White Sapphire", cat:"gemstone", a:"#EDEAE0", b:"#C9C2AA", light:"#FBFAF6", desc:"A clean, colourless sapphire with quiet, versatile sparkle."},
+  // {name:"Orange Sapphire", cat:"gemstone", a:"#E08A3E", b:"#B0621F", light:"#F3C08C", desc:"A bold, citrus-toned sapphire full of warmth and character."}
 ];
 const DEFAULT_JEWELLERY = [
   // {name:"Emerald Studs in 92% Silver", cat:"stud", type:"stud", accent:"#3E8F6B", desc:"Delicate emerald studs set in 92% silver for everyday elegance."},
   {name:"Emerald Ring", cat:"ring", type:"ring", accent:"#3E8F6B", desc:"A statement emerald ring crafted for timeless wear."},
-  {name:"Blue Sapphire Ring", cat:"ring", type:"ring", accent:"#3F63B0", desc:"A classic blue sapphire ring with a refined setting."},
-  {name:"Yellow Sapphire Ring", cat:"ring", type:"ring", accent:"#E6BE4A", desc:"A radiant yellow sapphire ring with warm, golden brilliance."},
-  {name:"Ruby Ring", cat:"ring", type:"ring", accent:"#C23A54", desc:"A rich ruby ring designed to be worn and cherished."},
+  // {name:"Blue Sapphire Ring", cat:"ring", type:"ring", accent:"#3F63B0", desc:"A classic blue sapphire ring with a refined setting."},
+  // {name:"Yellow Sapphire Ring", cat:"ring", type:"ring", accent:"#E6BE4A", desc:"A radiant yellow sapphire ring with warm, golden brilliance."},
+  // {name:"Ruby Ring", cat:"ring", type:"ring", accent:"#C23A54", desc:"A rich ruby ring designed to be worn and cherished."},
   {name:"Pink Sapphire Ring", cat:"ring", type:"ring", accent:"#DB80A2", desc:"A softly hued pink sapphire ring with graceful detailing."},
   // {name:"Ruby Necklace", cat:"necklace", type:"necklace", accent:"#C23A54", desc:"An elegant ruby necklace that elevates any occasion."},
   // {name:"Emerald Necklace", cat:"necklace", type:"necklace", accent:"#3E8F6B", desc:"A striking emerald necklace with a refined, timeless silhouette."},
-  {name:"Sapphire Studs", cat:"stud", type:"stud", accent:"#3F63B0", desc:"Sapphire studs across a range of elegant hues."},
+  // {name:"Blue Sapphire Studs ", cat:"stud", type:"stud", accent:"#3F63B0", desc:"Sapphire studs across a range of elegant hues."},
   // {name:"Diamond Jewellery", cat:"diamond", type:"diamond", accent:"#EDEAE0", desc:"Fine diamond jewellery pieces with classic, brilliant sparkle."},
   // {name:"Ring", cat:"ring", type:"ring", accent:"#D8BD82", desc:"A versatile gemstone ring suited to everyday elegance."},
   // {name:"Necklace", cat:"necklace", type:"necklace", accent:"#D8BD82", desc:"A graceful gemstone necklace for a polished finish."},
@@ -1424,13 +1424,11 @@ videoData.forEach(v=>{
   el.className='video-card';
   el.innerHTML = `
     <div class="video-thumb">
-      <img class="real-img" src="images/${v.thumb}" alt="${v.label}" loading="lazy" onerror="this.style.display='none'">
-      <svg class="deco" viewBox="0 0 200 200"><polygon points="100,20 150,60 130,120 70,120 50,60" fill="D8BD82"/></svg>
-      <div class="play-btn"><svg viewBox="0 0 24 24"><polygon points="6,4 20,12 6,20"/></svg></div>
+      <video class="real-img" src="${v.src}" autoplay muted loop playsinline preload="auto"
+             style="position:absolute; inset:0; width:100%; height:100%; object-fit:cover; z-index:1;"></video>
     </div>
     <div class="video-label">${v.label}</div>
     <div class="video-tag">${v.tag}</div>`;
-  el.addEventListener('click', ()=>openLightbox(v));
   scroller.appendChild(el);
 });
 const lightbox = document.getElementById('lightbox');
